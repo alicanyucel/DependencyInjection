@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DependencyInejction.ConsoleApp\DependencyInejction.ConsoleApp.csproj" />
+    <ProjectReference Include="..\DependencyInejction.ConsoleApp\DependencyInjection.ConsoleApp.csproj" />
   </ItemGroup>
 
 </Project>
