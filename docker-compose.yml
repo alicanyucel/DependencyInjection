@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  webapplication:
+    build:
+      context: .
+      dockerfile: DependencyInejction.WebApplication/Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  consoleapp:
+    build:
+      context: .
+      dockerfile: DependencyInejction.ConsoleApp/Dockerfile
+    command: dotnet DependencyInejction.ConsoleApp.dll
+    restart: "no"
